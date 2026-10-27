@@ -1,0 +1,692 @@
+/* ==========================================================================
+   ECHOCREATIVA — MASTERCLASS RESPONSIVE SYSTEM
+   Fluid scaling, zero horizontal overflow, and perfect synergy across all screens.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL OVERFLOW & VIEWPORT DEFENSE
+   -------------------------------------------------------------------------- */
+html, body {
+  width: 100% !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  position: relative;
+}
+
+/* Ensure all images, canvas, and containers respect their parents */
+img, svg, canvas, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.ambient-bg-wrapper {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+/* Form 2-Column Responsive Row */
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE NAV DRAWER
+   -------------------------------------------------------------------------- */
+.mobile-nav-drawer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(11, 5, 20, 0.96);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+}
+
+html[data-theme="light"] .mobile-nav-drawer {
+  background: rgba(250, 247, 253, 0.98);
+}
+
+.mobile-nav-drawer.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.mobile-drawer-close {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mobile-drawer-close:hover {
+  border-color: var(--ec-magenta);
+  color: var(--ec-magenta);
+}
+
+.mobile-drawer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.mobile-drawer-link {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 3.5vw, 1.45rem);
+  font-weight: 700;
+  color: var(--text-main);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: color var(--transition-fast);
+}
+
+.mobile-drawer-link span {
+  color: var(--ec-teal);
+  font-size: 1.1rem;
+  transition: transform var(--transition-fast);
+}
+
+.mobile-drawer-link:hover {
+  color: var(--ec-teal);
+}
+
+.mobile-drawer-link:hover span {
+  transform: translateX(4px);
+}
+
+.mobile-drawer-footer {
+  position: sticky;
+  bottom: 0;
+  margin-top: auto;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  background: inherit;
+  border-top: 1px solid var(--border-subtle);
+  z-index: 10;
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: 1240px and below (Compact Desktop & Standard Laptops)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1240px) {
+  .nav-links-desktop {
+    gap: clamp(0.6rem, 1vw, 1.1rem);
+  }
+
+  .nav-link {
+    font-size: 0.83rem;
+  }
+
+  .header-cta-btn {
+    font-size: 0.82rem;
+    padding: 0.48rem 1rem;
+  }
+
+  .brand-logo-img {
+    height: 44px;
+  }
+
+  .brand-logo-text {
+    font-size: 1.15rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: 1080px and below (Tablets, Small Laptops & Surface Pro)
+   Switch gracefully to the mobile menu so navbar is NEVER congested!
+   -------------------------------------------------------------------------- */
+@media (max-width: 1080px) {
+  :root {
+    --header-height: 70px;
+  }
+
+  /* Header transitions to mobile trigger */
+  .nav-desktop {
+    display: none !important;
+  }
+
+  .header-cta-btn {
+    display: none !important;
+  }
+
+  .mobile-menu-trigger {
+    display: flex !important;
+  }
+
+  .brand-logo-img {
+    height: 40px;
+  }
+
+  .brand-logo-text {
+    font-size: 1.1rem;
+  }
+
+  /* Keep 2-column hero layout on laptops and landscape tablets */
+  .hero-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-cta-group {
+    justify-content: flex-start;
+  }
+
+  .hero-visual-card {
+    max-width: 440px;
+  }
+
+  /* Services Grid — Keep 3 columns side by side for comparison */
+  .triad-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(0.75rem, 1.4vw, 1.4rem);
+    width: 100%;
+  }
+
+  .triad-card {
+    padding: clamp(1.25rem, 1.8vw, 1.85rem);
+  }
+
+  /* Diagnostic Grid */
+  .diagnostic-tabs-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .diagnostic-display-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 1.75rem;
+  }
+
+  /* Chatbots Spotlight Responsive */
+  .spotlight-content-grid {
+    grid-template-columns: 1.15fr 0.95fr;
+    gap: 1.5rem;
+  }
+
+  /* Process Grid (5 items -> 3 on row 1, 2 on row 2) */
+  .process-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  /* Cases Grid — Keep 3 columns side by side for comparison */
+  .cases-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(0.75rem, 1.4vw, 1.4rem);
+    width: 100%;
+  }
+
+  .case-body {
+    padding: clamp(1.1rem, 1.6vw, 1.5rem);
+  }
+
+  .case-top-bar {
+    padding: 1rem clamp(1rem, 1.5vw, 1.4rem);
+  }
+
+  /* Pricing Cards Grid — Keep 3 columns side by side for comparison */
+  .pricing-cards-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(0.75rem, 1.4vw, 1.4rem);
+    width: 100%;
+  }
+
+  .pricing-card {
+    padding: clamp(1.25rem, 1.8vw, 1.75rem);
+  }
+
+  /* Calculator Grid */
+  .calc-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Alebrijes Grid */
+  .alebrijes-cards-slider {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  /* Contact Grid */
+  .contact-layout-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .contact-grand-banner {
+    padding: clamp(2rem, 4vw, 3rem) clamp(1.4rem, 3vw, 2.5rem);
+  }
+
+  /* Footer Grid */
+  .footer-top-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: 960px and below
+   -------------------------------------------------------------------------- */
+@media (max-width: 960px) {
+  .diagnostic-display-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .diag-sidebar-card {
+    max-width: 520px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  .hero-stats-ribbon {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
+    padding: 1.35rem;
+  }
+
+  .stat-item:nth-child(2)::after {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: 768px and below (Mobile Tablets & Large Phones)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Hero Section Stacking on Tablets Portrait & Mobile */
+  .hero-section {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: clamp(2.1rem, 4.8vw, 3.2rem);
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .hero-description {
+    margin-inline: auto;
+    font-size: 1.05rem;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-visual-card {
+    max-width: 480px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  /* Purpose Grid on Mobile */
+  .purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .purpose-art-box {
+    max-width: 440px;
+    margin-inline: auto;
+    padding: 2rem;
+  }
+
+  /* Contact Grid on Mobile */
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.85rem;
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+  }
+
+  /* Purpose Grid */
+  .pillars-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Diagnostic Section on Mobile (Full-Width Stacking & Clean Proportions) */
+  .diagnostic-tabs-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .diagnostic-box {
+    padding: clamp(1.2rem, 3.5vw, 1.8rem) clamp(0.85rem, 2.5vw, 1.35rem);
+  }
+
+  .diagnostic-display-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: clamp(1.25rem, 3.5vw, 1.8rem) clamp(0.95rem, 2.5vw, 1.4rem);
+  }
+
+  .diag-pain-header {
+    font-size: clamp(1.15rem, 4.2vw, 1.45rem);
+    line-height: 1.35;
+    margin-bottom: 0.75rem;
+  }
+
+  .diag-solution-text {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    margin-bottom: 1.35rem;
+  }
+
+  .diag-action-points {
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .diag-action-points li {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .diag-sidebar-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.6rem 1.25rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  .diag-sidebar-card h4 {
+    font-size: 1.15rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .diag-sidebar-card p {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Process 1 Column on Mobile */
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Companion Floating Widget */
+  .companion-bubble {
+    display: none; /* Collapsed by default on mobile so it never obscures forms or buttons */
+  }
+
+  .companion-avatar-trigger {
+    width: 48px;
+    height: 48px;
+  }
+
+  .companion-avatar-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: 640px and below (Phones)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  /* Form Row Stacking */
+  .form-row-2col {
+    grid-template-columns: 1fr;
+  }
+
+  /* Calculator Options */
+  .calc-options-list {
+    grid-template-columns: 1fr;
+  }
+
+  .calc-section {
+    padding: 1.6rem 1rem;
+  }
+
+  .calc-total-val {
+    font-size: 2.4rem;
+  }
+
+  /* Pricing Filter Buttons */
+  .pricing-filter-nav {
+    gap: 0.45rem;
+  }
+
+  .filter-btn {
+    font-size: 0.8rem;
+    padding: 0.48rem 0.9rem;
+  }
+
+  .pricing-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  /* Alebrijes Gallery */
+  .alebrijes-cards-slider {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin-inline: auto;
+  }
+
+  .mascot-thumbnail-box {
+    height: 180px;
+  }
+
+  /* Diagnostic single column tabs */
+  .diagnostic-tabs-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Chatbots Spotlight Mobile */
+  .spotlight-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .spotlight-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .whatsapp-mockup-card {
+    max-width: 440px;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  /* Purpose mascot */
+  .purpose-art-box {
+    padding: 1.5rem 1rem;
+  }
+
+  .purpose-mascot-img {
+    max-width: 220px;
+  }
+
+  /* Stacking on mobile phones only */
+  .triad-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  .cases-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  .pricing-cards-container {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  .cloud-pill {
+    font-size: 0.76rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  /* Companion Widget Mobile Bottom Sheet & 44x44px Touch Target */
+  .companion-widget-container {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    flex-direction: column;
+    align-items: flex-end;
+    pointer-events: none;
+  }
+
+  .companion-bubble {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 18px 18px 6px 18px;
+    padding: 1.15rem 1.25rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+    animation: none;
+    margin-bottom: 8px;
+  }
+
+  .companion-close-btn {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: 480px and below (Small Phones)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-stats-ribbon {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat-item::after {
+    display: none !important;
+  }
+
+  .stat-item {
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 0.85rem;
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .btn-primary, .btn-magenta, .btn-secondary, .btn-outline-white {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-grand-banner {
+    padding: 1.75rem 1rem;
+  }
+
+  .contact-form-box {
+    padding: 1.35rem 0.95rem;
+  }
+
+  /* Diagnostic Card on Small Phones */
+  .diagnostic-display-grid {
+    padding: 1.15rem 0.85rem;
+  }
+
+  .diag-sidebar-card {
+    padding: 1.25rem 0.95rem;
+  }
+
+  .diag-action-points li {
+    font-size: 0.85rem;
+  }
+}

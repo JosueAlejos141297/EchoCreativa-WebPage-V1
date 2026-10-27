@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EchoCreativa · Modernización Digital sin Reemplazo de Sistemas | México</title>
+  <meta name="description" content="Software a medida, WhatsApp con IA y analítica construidos sobre Aspel SAE, COI, NOI y SQL. Potenciamos lo que tu empresa ya domina sin migraciones traumáticas.">
+  <meta name="keywords" content="EchoCreativa, modernización ERP México, desarrollo Aspel SAE, integración Aspel COI NOI, WhatsApp IA empresas, business intelligence SQL Server Firebird, inventario móvil almacén, software PyMEs México">
+  <meta name="author" content="EchoCreativa">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="MX">
+  <meta name="geo.placename" content="Ciudad de México">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://echocreativa.com.mx/">
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:url" content="https://echocreativa.com.mx/">
+  <meta property="og:site_name" content="EchoCreativa">
+  <meta property="og:title" content="EchoCreativa · Modernización Digital sin Reemplazo de Sistemas">
+  <meta property="og:description" content="Software a medida, WhatsApp con IA y analítica construidos sobre Aspel SAE, COI, NOI y SQL. Potenciamos lo que tu empresa ya domina sin migraciones traumáticas.">
+  <meta property="og:image" content="https://echocreativa.com.mx/assets/img/og-cover.png">
+  <meta property="og:image:alt" content="EchoCreativa - Modernización Digital y Soluciones Empresariales">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@echocreativa">
+  <meta name="twitter:creator" content="@echocreativa">
+  <meta name="twitter:title" content="EchoCreativa · Modernización Digital sin Reemplazo de Sistemas">
+  <meta name="twitter:description" content="Software a medida, WhatsApp con IA y analítica construidos sobre Aspel SAE, COI, NOI y SQL. Potenciamos lo que tu empresa ya domina sin migraciones traumáticas.">
+  <meta name="twitter:image" content="https://echocreativa.com.mx/assets/img/og-cover.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+
+  <!-- Google Fonts: Space Grotesk (600, 700), Plus Jakarta Sans (400, 600, 700), JetBrains Mono (500) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Core Scripts (Deferred execution for optimal Core Web Vitals) -->
+  <script src="js/particles.js" defer></script>
+  <script src="js/diagnostic.js" defer></script>
+  <script src="js/quote-calc.js" defer></script>
+  <script src="js/companion.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- AMBIENT LIVING BACKGROUND (ALEBRIJE ORBS & PARTICLES) -->
+  <div class="ambient-bg-wrapper" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+    <div class="mesh-grid-pattern"></div>
+    <canvas id="particleCanvas"></canvas>
+  </div>
+
+  <!-- SITE HEADER & STICKY NAVBAR -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-logo-wrap" aria-label="EchoCreativa">
+        <img src="assets/img/logo.png" alt="EchoCreativa" class="brand-logo-img">
+        <span class="brand-logo-text">echo<span>creativa</span></span>
+      </a>
+
+      <!-- Desktop Nav (Streamlined 6 High-Impact Links) -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul class="nav-links-desktop">
+          <li><a href="#soluciones" class="nav-link">Soluciones</a></li>
+          <li><a href="#diagnostico" class="nav-link">Diagnóstico</a></li>
+          <li><a href="#proceso" class="nav-link">Proceso</a></li>
+          <li><a href="#casos" class="nav-link">Casos</a></li>
+          <li><a href="#precios" class="nav-link">Inversión</a></li>
+          <li><a href="#guardianes" class="nav-link">Alebrijes</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle -->
+        <button type="button" class="btn-theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" aria-label="Cambiar modo de color" title="Alternar tema claro / oscuro">
+          <span id="themeIcon">☀️</span>
+        </button>
+
+        <!-- CTA Direct -->
+        <a href="#contacto" class="btn-primary header-cta-btn">
+          <span>Hablemos de tu proyecto</span>
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Trigger -->
+        <button type="button" class="mobile-menu-trigger" onclick="toggleMobileMenu()" aria-label="Abrir menú móvil">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <a href="#inicio" class="brand-logo-wrap" onclick="closeMobileMenu()">
+        <img src="assets/img/logo.png" alt="EchoCreativa Logo" style="height: 38px;">
+      </a>
+      <button type="button" class="mobile-drawer-close" onclick="closeMobileMenu()" aria-label="Cerrar menú">✕</button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="#soluciones" class="mobile-drawer-link" onclick="closeMobileMenu()">Soluciones <span>→</span></a></li>
+      <li><a href="#diagnostico" class="mobile-drawer-link" onclick="closeMobileMenu()">Diagnóstico <span>→</span></a></li>
+      <li><a href="#proceso" class="mobile-drawer-link" onclick="closeMobileMenu()">Proceso <span>→</span></a></li>
+      <li><a href="#casos" class="mobile-drawer-link" onclick="closeMobileMenu()">Casos <span>→</span></a></li>
+      <li><a href="#precios" class="mobile-drawer-link" onclick="closeMobileMenu()">Inversión <span>→</span></a></li>
+      <li><a href="#guardianes" class="mobile-drawer-link" onclick="closeMobileMenu()">Alebrijes <span>→</span></a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="https://wa.me/525670049062?text=Hola%20EchoCreativa,%20deseo%20platicar%20sobre%20un%20proyecto." target="_blank" class="btn-primary" style="justify-content: center; width: 100%;">
+        Platicar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: HERO (Espíritu de Alebrije & Rigor Técnico)
+         ========================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <h1 class="hero-title">
+            Soluciones digitales con <span class="gradient-text-hero">espíritu de alebrije</span> y rigor técnico.
+          </h1>
+
+          <p class="hero-description">
+            No necesitas cambiar de ERP ni tirar tu inversión a la basura. Construimos software a medida, automatización e IA, datos y marketing sobre los sistemas que tu empresa ya domina: <strong>Aspel SAE, COI, NOI, SQL y WhatsApp</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#diagnostico" class="btn-magenta">
+              <span>Diagnosticar mi reto</span>
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://wa.me/525670049062?text=Hola%20EchoCreativa,%20quiero%20conocer%20m%C3%A1s%20sobre%20sus%20servicios." target="_blank" class="btn-hero-wa" aria-label="Platicar por WhatsApp directo">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>WhatsApp Directo</span>
+            </a>
+          </div>
+
+          <div class="hero-scroll-hint">
+            <a href="#soluciones" class="hero-subtle-link">
+              <span>Conoce nuestras soluciones</span>
+              <span class="subtle-link-arrow">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Visual Alebrije Showcase Card -->
+        <div class="hero-visual-card reveal" style="transition-delay: 0.15s;">
+          <div class="artisan-header-bar"></div>
+          
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+            <span class="mono-tag" style="color: var(--ec-teal);">Guardián_Digital.live</span>
+            <div class="palette-dots">
+              <span class="dot-swatch" style="background: var(--ec-purple);" title="#431259 Púrpura"></span>
+              <span class="dot-swatch" style="background: var(--ec-magenta);" title="#DE1A80 Magenta"></span>
+              <span class="dot-swatch" style="background: var(--ec-teal);" title="#17AFA1 Turquesa"></span>
+            </div>
+          </div>
+
+          <div class="hero-mascot-img-wrap">
+            <img src="assets/img/mascotas/guardian_digital.jpg" alt="Alebrije Guardián Digital EchoCreativa" class="hero-mascot-img">
+          </div>
+
+          <div class="mascot-caption-bar">
+            <div>
+              <span class="mono-tag" style="color: var(--ec-magenta); font-size: 0.72rem;">Alebrije Tecno-Quimera</span>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600; margin: 0;">Estructura · Instinto · Velocidad</p>
+            </div>
+            <a href="#guardianes" style="font-size: 0.78rem; color: var(--ec-teal); font-family: var(--font-mono); font-weight: 600;">
+              Ver galería →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Muted Native Integrations Ribbon -->
+      <div class="container">
+        <div class="hero-integrations-ribbon reveal" style="transition-delay: 0.2s;">
+          <span class="integrations-label">Integración nativa con:</span>
+          <div class="integrations-pills-list">
+            <span class="integration-pill">Aspel SAE</span>
+            <span class="integration-pill">Aspel COI</span>
+            <span class="integration-pill">Aspel NOI</span>
+            <span class="integration-pill">SQL Server</span>
+            <span class="integration-pill">Firebird</span>
+            <span class="integration-pill">WhatsApp Business</span>
+            <span class="integration-pill">Power BI</span>
+            <span class="integration-pill">Mercado Pago / Stripe</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Stats Ribbon -->
+      <div class="container">
+        <div class="hero-stats-ribbon reveal" style="transition-delay: 0.25s;">
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Proyectos y sistemas entregados</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">-75%</div>
+            <div class="stat-label">Tiempo en conteo y almacén móvil</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Atención inmediata con WhatsApp IA</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Precisión en dispersión bancaria</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: ADN ECHOCREATIVA (MODERNIZACIÓN SIN REEMPLAZO TRAUMÁTICO)
+         ========================================================================== -->
+    <section class="purpose-section" id="proposito">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="mono-tag" style="color: var(--ec-teal);">ADN EchoCreativa</span>
+          <h2>Modernización ágil sin reemplazos traumáticos.</h2>
+          <p>
+            El verdadero freno de las PyMEs mexicanas no es la falta de tecnología, sino la falsa promesa de que para innovar hay que tirar su inversión a la basura. En EchoCreativa transformamos sistemas consolidados —<strong>Aspel SAE, COI, NOI, SQL Server y Firebird</strong>— en ecosistemas de alto impacto mediante capas ágiles de Inteligencia Artificial, movilidad y automatización comercial.
+          </p>
+        </div>
+
+        <div class="purpose-grid">
+          <div class="purpose-art-box reveal">
+            <img src="assets/img/mascotas/conexion_total.jpg" alt="Guardián de la Integración EchoCreativa" class="purpose-mascot-img">
+            <span class="mono-tag" style="color: var(--ec-teal);">Evolución sin Parálisis</span>
+            <h4 style="margin: 0.5rem 0; font-size: 1.25rem;">Evolucionar lo que ya dominas.</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted); max-width: 320px; margin: 0 auto;">
+              Sin curvas forzadas ni semanas de paro operativo: sincronizamos tus bodegas, tus cuentas bancarias, tus ventas y tus clientes sobre la misma base confiable.
+            </p>
+          </div>
+
+          <div class="pillars-cards-grid reveal" style="transition-delay: 0.15s;">
+            <!-- 01 Protección de Inversión -->
+            <article class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">🛡️</div>
+                <h3 class="pillar-title">Protección de tu Inversión</h3>
+              </div>
+              <p>No obligamos a tu personal a reaprender otro ERP millonario. Respetamos tu catálogo, tus partidas y tu historial contable creando autopistas directas hacia la nube y dispositivos móviles.</p>
+            </article>
+
+            <!-- 02 Instinto Comercial IA -->
+            <article class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">⚡</div>
+                <h3 class="pillar-title">Instinto Comercial con IA</h3>
+              </div>
+              <p>Convertimos tu WhatsApp en tu ejecutivo comercial más disciplinado: atención inmediata 24/7, calificación de prospectos, cotizaciones en vivo y enrutamiento inteligente sin perder leads.</p>
+            </article>
+
+            <!-- 03 Movilidad en Piso -->
+            <article class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">📱</div>
+                <h3 class="pillar-title">Operación Móvil en Piso</h3>
+              </div>
+              <p>Llevamos el control a donde ocurre el trabajo: escaneo para conteo de inventarios en bodega conectado a Aspel SAE y dispersión bancaria automática sin recapturas ni notas en papel.</p>
+            </article>
+
+            <!-- 04 Rentabilidad y Datos Vivos -->
+            <article class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">📊</div>
+                <h3 class="pillar-title">Decisiones con Datos Vivos</h3>
+              </div>
+              <p>Business Intelligence directo de tus bases SQL y Firebird. Conoce tu margen real, rotación de almacén y productos más rentables en tableros ejecutivos sin esperar cierres manuales de mes.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Capability Pills Cloud -->
+        <div class="pills-cloud reveal" style="transition-delay: 0.25s;">
+          <span class="cloud-pill">✦ Conectividad Aspel SAE / COI / NOI</span>
+          <span class="cloud-pill">✦ Inventario Móvil en Tiempo Real</span>
+          <span class="cloud-pill">✦ Asistentes WhatsApp con IA</span>
+          <span class="cloud-pill">✦ Dashboards SQL Server & Firebird</span>
+          <span class="cloud-pill">✦ Dispersión Bancaria Automatizada</span>
+          <span class="cloud-pill">✦ Páginas Web de Alta Conversión</span>
+          <span class="cloud-pill">✦ E-Commerce con Mercado Pago</span>
+          <span class="cloud-pill">✦ Google Business Profile & SEO Local</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: LA TRÍADA HÍBRIDA & SERVICIOS (Tu partner tecnológico completo)
+         ========================================================================== -->
+    <section class="services-section" id="soluciones">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="mono-tag">Capacidades Integradas</span>
+          <h2>Tu partner tecnológico y comercial completo.</h2>
+          <p>
+            La tecnología sin estrategia comercial es un costo frío; el marketing sin sistemas operativos no escala. Ensamblamos tres fuerzas complementarias para crear una ventaja duradera.
+          </p>
+        </div>
+
+        <div class="triad-grid">
+          <!-- Col 1: Desarrollo & Sistemas -->
+          <article class="triad-card triad-dev reveal">
+            <div>
+              <div class="triad-icon-wrap">💻</div>
+              <span class="triad-tag">01 · Columna Operativa</span>
+              <h3 class="triad-title">Desarrollo & Sistemas</h3>
+              <p class="triad-desc">
+                Construimos la columna vertebral operativa de tu empresa. Herramientas a medida y aplicaciones móviles que extienden tus sistemas ERP actuales.
+              </p>
+              <ul class="triad-feature-list">
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Inventario móvil directo a almacén y ERP</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Integración Aspel SAE, COI y NOI</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Dispersión automática de nómina y layouts</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Cotizadores inteligentes con existencias en vivo</span>
+                </li>
+              </ul>
+            </div>
+            <div class="triad-footer-tags">
+              <span class="subtag">Aspel</span>
+              <span class="subtag">SQL Server</span>
+              <span class="subtag">Firebird</span>
+              <span class="subtag">Apps Móviles</span>
+            </div>
+          </article>
+
+          <!-- Col 2: Estrategia, Marketing & Presencia -->
+          <article class="triad-card triad-mkt reveal" style="transition-delay: 0.15s;">
+            <div>
+              <div class="triad-icon-wrap">📣</div>
+              <span class="triad-tag">02 · Atracción Comercial</span>
+              <h3 class="triad-title">Estrategia & Marketing</h3>
+              <p class="triad-desc">
+                Tu presencia digital diseñada para que los clientes ideales te encuentren, comprendan el valor de tus servicios y tomen acción de inmediato.
+              </p>
+              <ul class="triad-feature-list">
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Sitios web y One Pages de alta conversión</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Tiendas online con pasarela Mercado Pago</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Gestión de redes sociales con Reels y pauta</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Google Business Profile & SEO local para visibilidad</span>
+                </li>
+              </ul>
+            </div>
+            <div class="triad-footer-tags">
+              <span class="subtag">Meta Ads</span>
+              <span class="subtag">Google Ads</span>
+              <span class="subtag">SEO / GEO</span>
+              <span class="subtag">WordPress</span>
+            </div>
+          </article>
+
+          <!-- Col 3: Inteligencia Artificial & Datos -->
+          <article class="triad-card triad-ai reveal" style="transition-delay: 0.3s;">
+            <div>
+              <div class="triad-icon-wrap">⚡</div>
+              <span class="triad-tag">03 · Instinto & Decisión</span>
+              <h3 class="triad-title">IA, Bots & Analítica</h3>
+              <p class="triad-desc">
+                Dotamos de instinto a tu negocio. Asistentes de WhatsApp con IA en planes mensuales todo incluido, precalificación de leads y analítica directiva.
+              </p>
+              <ul class="triad-feature-list">
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Chatbot WhatsApp IA todo incluido (desde $1,900/mes)</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Precalificación de leads, cotizaciones y divisas en vivo</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Enrutamiento inteligente por especialidad y sucursal</span>
+                </li>
+                <li class="triad-feature-item">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Business Intelligence y dashboards sobre SQL / Firebird</span>
+                </li>
+              </ul>
+            </div>
+            <div class="triad-footer-tags">
+              <span class="subtag">WhatsApp Cloud API</span>
+              <span class="subtag">IA Generativa</span>
+              <span class="subtag">Pre-calificación</span>
+              <span class="subtag">Power BI</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: DIAGNÓSTICO INTERACTIVO (EMPIEZA POR TU RETO)
+         ========================================================================== -->
+    <section class="diagnostic-section" id="diagnostico">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="mono-tag" style="color: var(--ec-magenta);">Diagnóstico en Vivo</span>
+          <h2>Empieza por tu reto.</h2>
+          <p>
+            No necesitas saber qué tecnología pedir de inicio. Elige el obstáculo principal de tu negocio y te mostramos la ruta exacta construida sobre lo que ya tienes.
+          </p>
+        </div>
+
+        <div class="diagnostic-box reveal">
+          <!-- Dynamic Tabs with Skeleton Pre-render for Zero CLS -->
+          <div class="diagnostic-tabs-row" id="diagnosticTabsContainer">
+            <div class="skeleton-tab skeleton-pulse"></div>
+            <div class="skeleton-tab skeleton-pulse"></div>
+            <div class="skeleton-tab skeleton-pulse"></div>
+            <div class="skeleton-tab skeleton-pulse"></div>
+            <div class="skeleton-tab skeleton-pulse"></div>
+          </div>
+
+          <!-- Active Panel Content -->
+          <div class="diagnostic-display-grid" id="diagnosticDisplayGrid">
+            <div>
+              <span class="mono-tag" style="color: var(--ec-magenta); margin-bottom: 0.5rem; display: block;" id="diagBadge">01 · Crecimiento Comercial</span>
+              <h3 class="diag-pain-header" id="diagHeadline">“Necesito más clientes calificados y mejorar mi presencia digital”</h3>
+              <p class="diag-solution-text" id="diagDesc">
+                Transformamos tu presencia digital en un motor de captación activo: estructuramos tu sitio web para conversión y activamos campañas con contenido que genera confianza inmediata.
+              </p>
+              <ul class="diag-action-points" id="diagSolutions">
+                <!-- Solutions injected by diagnostic.js -->
+              </ul>
+            </div>
+
+            <!-- Action Card -->
+            <div class="diag-sidebar-card">
+              <span class="diag-sidebar-badge">Solución Sugerida</span>
+              <h4 id="diagPkg" style="color: var(--ec-teal);">Páginas Web / Redes Impulso</h4>
+              <p style="color: var(--text-muted);">
+                Platiquemos 15 minutos sin compromiso para revisar este caso y mostrarte cómo resolverlo.
+              </p>
+              <a href="https://wa.me/525670049062" target="_blank" class="btn-magenta" id="diagCtaBtn" style="justify-content: center; width: 100%;">
+                <span>Resolver este reto</span>
+                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: METODOLOGÍA (CÓMO TRABAJAMOS EN 5 PASOS)
+         ========================================================================== -->
+    <section class="process-section" id="proceso">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="mono-tag">Metodología Comprobada</span>
+          <h2>Cómo trabajamos contigo.</h2>
+          <p>
+            Un proceso simple, con avances visibles desde la primera semana y acuerdos comerciales claros desde el inicio.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <!-- Paso 1 -->
+          <article class="process-card reveal">
+            <span class="process-step-num">01 / 05</span>
+            <h3 class="process-step-title">Diagnóstico</h3>
+            <p class="process-step-desc">
+              Identificamos objetivos comerciales, sistemas existentes (Aspel, SQL, ERP), materiales disponibles y alcances prioritarios.
+            </p>
+          </article>
+
+          <!-- Paso 2 -->
+          <article class="process-card reveal" style="transition-delay: 0.1s;">
+            <span class="process-step-num">02 / 05</span>
+            <h3 class="process-step-title">Propuesta</h3>
+            <p class="process-step-desc">
+              Confirmamos el plan a medida, tiempos de entrega, presupuesto fijo y calendario de hitos con responsables designados.
+            </p>
+          </article>
+
+          <!-- Paso 3 -->
+          <article class="process-card reveal" style="transition-delay: 0.2s;">
+            <span class="process-step-num">03 / 05</span>
+            <h3 class="process-step-title">Ejecución</h3>
+            <p class="process-step-desc">
+              Diseñamos, configuramos la tecnología e implementamos por etapas compartiendo avances funcionales comprobables.
+            </p>
+          </article>
+
+          <!-- Paso 4 -->
+          <article class="process-card reveal" style="transition-delay: 0.3s;">
+            <span class="process-step-num">04 / 05</span>
+            <h3 class="process-step-title">Validación</h3>
+            <p class="process-step-desc">
+              Pruebas operativas con tu equipo, simulación de flujos de compra o sincronización, ajustes finales y control de calidad.
+            </p>
+          </article>
+
+          <!-- Paso 5 -->
+          <article class="process-card reveal" style="transition-delay: 0.4s;">
+            <span class="process-step-num">05 / 05</span>
+            <h3 class="process-step-title">Lanzamiento</h3>
+            <p class="process-step-desc">
+              Publicamos tu sitio, activamos los bots o desplegamos las integraciones con capacitación y acompañamiento continuo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: CASOS REALES EN ACCIÓN (SOLUCIONES PROBADAS EN LA INDUSTRIA)
+         ========================================================================== -->
+    <section class="cases-section" id="casos">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="mono-tag" style="color: var(--ec-teal);">Resultados Comprobados</span>
+          <h2>Casos Reales en la Industria Mexicana.</h2>
+          <p>
+            Fricciones operativas complejas resueltas con la integración exacta de movilidad, conectividad ERP y capas ágiles de Inteligencia Artificial.
+          </p>
+        </div>
+
+        <div class="cases-grid">
+          <!-- Caso 1 -->
+          <article class="case-card reveal">
+            <div class="case-top-bar">
+              <span class="mono-tag" style="color: var(--ec-teal);">Mayorista & Distribución · CDMX</span>
+              <span class="subtag">Móvil + Aspel SAE</span>
+            </div>
+            <div class="case-body">
+              <h3 class="case-title">Mayorista y Distribución en CDMX: Automatización de Conteos Móviles con Aspel SAE</h3>
+              <p class="case-desc">
+                Digitalización del levantamiento y auditoría de inventarios desde dispositivos móviles en bodegas industriales, sincronizando existencias directamente con Aspel SAE y bases Firebird en tiempo real.
+              </p>
+              <div class="case-metric-highlight">
+                <div class="case-metric-val val-teal">-75%</div>
+                <div class="case-metric-lbl">Tiempo invertido en conteos físicos y captura manual</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Caso 2 -->
+          <article class="case-card reveal" style="transition-delay: 0.15s;">
+            <div class="case-top-bar">
+              <span class="mono-tag" style="color: var(--ec-magenta);">E-commerce & Servicios B2B</span>
+              <span class="subtag">WhatsApp IA + Meta</span>
+            </div>
+            <div class="case-body">
+              <h3 class="case-title">E-commerce y Servicios: Precalificación de Clientes 24/7 vía WhatsApp IA</h3>
+              <p class="case-desc">
+                Asistente inteligente entrenado con catálogo y cotizaciones del negocio que responde al instante, filtra la intención de compra real y canaliza prospectos calificados con ejecutivos de cuenta.
+              </p>
+              <div class="case-metric-highlight">
+                <div class="case-metric-val val-magenta">24 / 7</div>
+                <div class="case-metric-lbl">Respuesta en segundos y filtrado de intención comercial</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Caso 3 -->
+          <article class="case-card reveal" style="transition-delay: 0.3s;">
+            <div class="case-top-bar">
+              <span class="mono-tag" style="color: var(--ec-teal);">Despacho Contable & Nómina</span>
+              <span class="subtag">Layouts + Aspel NOI / COI</span>
+            </div>
+            <div class="case-body">
+              <h3 class="case-title">Despacho Contable & Nómina: Dispersión y Validación Bancaria sin Errores</h3>
+              <p class="case-desc">
+                Automatización integral de layouts bancarios (BBVA, Banamex, Santander) generados directo de la prenómina y pólizas del ERP, blindando transferencias masivas contra errores de captura.
+              </p>
+              <div class="case-metric-highlight">
+                <div class="case-metric-val val-purple">100%</div>
+                <div class="case-metric-lbl">Precisión y validación previa en dispersiones bancarias</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SPOTLIGHT: ASISTENTES VIRTUALES CON IA PARA WHATSAPP (CHATBOTS ECHO)
+         Fuente Oficial: Documento "ChatBots Echo" · Planes Mensuales Todo Incluido
+         ========================================================================== -->
+    <section class="chatbots-spotlight-section" id="chatbots-echo">
+      <div class="container">
+        <div class="chatbots-spotlight-card reveal">
+          <div class="spotlight-badge-row">
+            <span class="badge-pill">
+              <span class="pulse-indicator"></span>
+              <span class="mono-tag" style="color: var(--ec-teal);">Automatización de WhatsApp · Modelo Todo Incluido</span>
+            </span>
+          </div>
+
+          <div class="spotlight-content-grid">
+            <div class="spotlight-text-col">
+              <h2 style="font-size: clamp(1.75rem, 2.5vw, 2.35rem); margin-bottom: 1rem; line-height: 1.2;">
+                Digitalice su atención comercial y soporte 24/7 <span class="gradient-text-hero">sin descapitalizarse</span>.
+              </h2>
+              <p style="color: var(--text-secondary); font-size: 1.02rem; line-height: 1.7; margin-bottom: 1.5rem;">
+                Nuestros <strong>Planes Mensuales Todo Incluido</strong> de EchoCreativa integran en una sola iguala el diseño conversacional, la configuración técnica, la licencia activa de IA y el acompañamiento técnico continuo. Ponga a operar su asistente en <strong>5 a 7 días hábiles</strong>.
+              </p>
+              
+              <!-- 4 Pilares del Servicio del Documento ChatBots Echo -->
+              <div class="spotlight-pillars-grid">
+                <div class="spotlight-pillar-item">
+                  <div class="pillar-mini-icon">🚀</div>
+                  <div>
+                    <strong style="color: var(--text-main); display: block; font-size: 0.92rem;">Puesta en Marcha Ágil</strong>
+                    <span style="color: var(--text-muted); font-size: 0.83rem;">Configuración, pruebas y puesta en marcha bajo convenio de 6 meses.</span>
+                  </div>
+                </div>
+
+                <div class="spotlight-pillar-item">
+                  <div class="pillar-mini-icon">⚡</div>
+                  <div>
+                    <strong style="color: var(--text-main); display: block; font-size: 0.92rem;">Infraestructura IA 24/7</strong>
+                    <span style="color: var(--text-muted); font-size: 0.83rem;">Operación continua en la nube, panel de atención y respuestas en segundos.</span>
+                  </div>
+                </div>
+
+                <div class="spotlight-pillar-item">
+                  <div class="pillar-mini-icon">🧠</div>
+                  <div>
+                    <strong style="color: var(--text-main); display: block; font-size: 0.92rem;">Precalificación & Cotizaciones</strong>
+                    <span style="color: var(--text-muted); font-size: 0.83rem;">Entrenado con su catálogo, cotizaciones orientativas, divisas y filtrado de intención.</span>
+                  </div>
+                </div>
+
+                <div class="spotlight-pillar-item">
+                  <div class="pillar-mini-icon">🔀</div>
+                  <div>
+                    <strong style="color: var(--text-main); display: block; font-size: 0.92rem;">Enrutamiento Multi-Área</strong>
+                    <span style="color: var(--text-muted); font-size: 0.83rem;">Canalización automática a asesores por especialidad (Ventas, Soporte o Sucursales).</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.75rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                <a href="#precios" class="btn-magenta" onclick="filterPricingCategory('bots')">
+                  <span>Ver Planes de Chatbots (desde $1,900/mes)</span>
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://wa.me/525670049062?text=Hola%20EchoCreativa,%20quiero%20conocer%20los%20Planes%20Mensuales%20de%20Chatbots%20con%20IA." target="_blank" class="btn-outline-white">
+                  <span>Platicar por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Simulated WhatsApp Card -->
+            <div class="spotlight-visual-col">
+              <div class="whatsapp-mockup-card">
+                <div class="wa-header">
+                  <div class="wa-avatar">
+                    <img src="assets/img/mascotas/ajolote_de_flujos.jpg" alt="Ajolote de Flujos EchoCreativa">
+                  </div>
+                  <div>
+                    <div class="wa-contact-name">EchoCreativa Asistente IA <span class="wa-verified">✓</span></div>
+                    <div class="wa-status">En línea · Respuestas 24/7 en segundos</div>
+                  </div>
+                </div>
+                <div class="wa-chat-body">
+                  <div class="wa-bubble incoming">
+                    ¡Hola! 👋 Bienvenido a EchoCreativa. Atiendo dudas comerciales, calculo cotizaciones y canalizo tu proyecto con el asesor indicado. ¿En qué podemos apoyarte hoy?
+                  </div>
+                  <div class="wa-bubble outgoing">
+                    Hola, me gustaría automatizar la atención de mi negocio en WhatsApp y filtrar prospectos calificados.
+                  </div>
+                  <div class="wa-bubble incoming">
+                    ¡Excelente decisión! ⚡ Con nuestro <strong>Plan Crecimiento (desde $2,500 MXN/mes)</strong> preparamos la IA con la información de tu empresa, cotiza en tiempo real y transfiere los leads listos para compra a tus ejecutivos.
+                  </div>
+                  <div class="wa-bubble incoming" style="background: rgba(23, 175, 161, 0.15); border: 1px solid rgba(23, 175, 161, 0.35);">
+                    🎯 <em>Puesta en marcha en 5 a 7 días hábiles tras recibir accesos e insumos de tu empresa.</em>
+                  </div>
+                </div>
+                <div class="wa-footer-action">
+                  <a href="#precios" class="btn-primary" style="justify-content: center; width: 100%; font-size: 0.85rem; padding: 0.65rem 1rem;" onclick="filterPricingCategory('bots')">
+                    Explorar los 3 Planes de Chatbot →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: PLANES & TABLA DE INVERSIÓN (Precios oficiales del PDF)
+         ========================================================================== -->
+    <section class="pricing-section" id="precios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="mono-tag" style="color: var(--ec-teal);">Transparencia Total</span>
+          <h2>Planes e Inversión Comercial 2026.</h2>
+          <p>
+            Propuestas claras y sin costos ocultos. Consulta los alcances detallados o arma tu paquete a la medida en nuestro cotizador interactivo.
+          </p>
+        </div>
+
+        <!-- Filter navigation buttons -->
+        <div class="pricing-filter-nav reveal">
+          <button type="button" class="filter-btn active" data-category="web" onclick="filterPricingCategory('web')">Páginas Web</button>
+          <button type="button" class="filter-btn" data-category="tienda" onclick="filterPricingCategory('tienda')">Tiendas en Línea</button>
+          <button type="button" class="filter-btn" data-category="redes" onclick="filterPricingCategory('redes')">Redes Sociales</button>
+          <button type="button" class="filter-btn" data-category="bots" onclick="filterPricingCategory('bots')">Chatbots IA (Suscripción Mensual)</button>
+        </div>
+
+        <!-- Dynamic Pricing Cards Grid with Skeleton Loaders -->
+        <div class="pricing-cards-container" id="pricingCardsGrid">
+          <div class="skeleton-pricing-card skeleton-pulse">
+            <div class="skeleton-line" style="width: 50%; height: 24px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 35%; height: 16px; margin-bottom: 24px;"></div>
+            <div class="skeleton-line" style="width: 70%; height: 36px; margin-bottom: 24px;"></div>
+            <div class="skeleton-line" style="width: 100%; height: 14px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 90%; height: 14px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 80%; height: 14px; margin-bottom: 32px;"></div>
+            <div class="skeleton-line" style="width: 100%; height: 44px; margin-top: auto; border-radius: 999px;"></div>
+          </div>
+          <div class="skeleton-pricing-card skeleton-pulse">
+            <div class="skeleton-line" style="width: 50%; height: 24px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 35%; height: 16px; margin-bottom: 24px;"></div>
+            <div class="skeleton-line" style="width: 70%; height: 36px; margin-bottom: 24px;"></div>
+            <div class="skeleton-line" style="width: 100%; height: 14px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 90%; height: 14px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 80%; height: 14px; margin-bottom: 32px;"></div>
+            <div class="skeleton-line" style="width: 100%; height: 44px; margin-top: auto; border-radius: 999px;"></div>
+          </div>
+          <div class="skeleton-pricing-card skeleton-pulse">
+            <div class="skeleton-line" style="width: 50%; height: 24px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 35%; height: 16px; margin-bottom: 24px;"></div>
+            <div class="skeleton-line" style="width: 70%; height: 36px; margin-bottom: 24px;"></div>
+            <div class="skeleton-line" style="width: 100%; height: 14px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 90%; height: 14px; margin-bottom: 12px;"></div>
+            <div class="skeleton-line" style="width: 80%; height: 14px; margin-bottom: 32px;"></div>
+            <div class="skeleton-line" style="width: 100%; height: 44px; margin-top: auto; border-radius: 999px;"></div>
+          </div>
+        </div>
+
+        <!-- CHATBOTS ECHO OFFICIAL COMMERCIAL CONDITIONS (Visible when 'bots' is selected) -->
+        <div class="pricing-conditions-box reveal" id="pricingChatbotConditions" style="display: none;">
+          <div style="display: flex; gap: 1rem; align-items: flex-start;">
+            <div style="font-size: 1.6rem; line-height: 1; color: var(--ec-teal); flex-shrink: 0;">📋</div>
+            <div>
+              <div class="badge-pill" style="margin-bottom: 0.6rem; display: inline-flex;">
+                <span class="pulse-indicator"></span>
+                <span class="mono-tag" style="color: var(--ec-teal);">Condiciones Oficiales · Documento "ChatBots Echo"</span>
+              </div>
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--text-main);">
+                Esquema de Mensajería, Condiciones y Alcance del Servicio
+              </h4>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.55rem; font-size: 0.86rem; color: var(--text-muted); line-height: 1.6;">
+                <li><strong style="color: var(--text-main);">• Activación y permanencia:</strong> Esquema bajo convenio de suscripción mínima de 6 meses. El proyecto inicia con el pago de la primera mensualidad; entrega estimada en 5 a 7 días hábiles tras recibir accesos e insumos.</li>
+                <li><strong style="color: var(--text-main);">• Consumo y mensajería en WhatsApp:</strong> El tráfico de WhatsApp Business API (Meta) se gestiona de forma transparente según el volumen real utilizado, sin márgenes artificiales fijos.</li>
+                <li><strong style="color: var(--text-main);">• Mantenimiento y soporte incluido:</strong> Contempla la licencia activa de plataforma EchoCreativa, infraestructura en la nube 24/7 y soporte con ajustes menores continuos (precios, horarios, textos o FAQs). Integraciones complejas con ERP o nuevos desarrollos a medida se cotizan por separado.</li>
+                <li><strong style="color: var(--text-main);">• Transparencia técnica:</strong> La titularidad de la línea telefónica y la aprobación final de cierres comerciales corresponden al cliente. Precios en MXN antes de IVA.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE CUSTOM QUOTE CALCULATOR -->
+        <div class="calc-section reveal" id="cotizador">
+          <div class="section-header text-left" style="margin-bottom: 2rem;">
+            <span class="mono-tag" style="color: var(--ec-magenta);">Cotizador Rápido</span>
+            <h3 style="font-size: 1.85rem;">Arma tu paquete a la medida.</h3>
+            <p>Selecciona los módulos que necesita tu empresa hoy y obtén un estimado al instante.</p>
+          </div>
+
+          <div class="calc-grid">
+            <div class="calc-options-list" id="calcOptionsContainer">
+              <div class="skeleton-calc-item skeleton-pulse"></div>
+              <div class="skeleton-calc-item skeleton-pulse"></div>
+              <div class="skeleton-calc-item skeleton-pulse"></div>
+              <div class="skeleton-calc-item skeleton-pulse"></div>
+              <div class="skeleton-calc-item skeleton-pulse"></div>
+              <div class="skeleton-calc-item skeleton-pulse"></div>
+            </div>
+
+            <!-- Summary Card -->
+            <div class="calc-summary-card">
+              <span class="calc-total-label">Inversión Estimada</span>
+              <div class="calc-total-val" id="calcTotalVal">Desde: $0</div>
+              <p id="calcDetailsText" style="font-size: 0.85rem; color: var(--text-muted);"></p>
+              
+              <a href="#" target="_blank" class="btn-magenta" id="calcSendBtn" style="justify-content: center; width: 100%;">
+                <span>Solicitar esta cotización por WhatsApp</span>
+                <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <small style="color: var(--text-faint); font-size: 0.74rem;">* Precios de referencia antes de IVA. Sujeto a diagnóstico técnico inicial.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: GUARDIANES ALEBRIJES SHOWCASE
+         ========================================================================== -->
+    <section class="alebrijes-gallery-section" id="guardianes">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="mono-tag" style="color: var(--ec-magenta);">Identidad & Espíritu</span>
+          <h2>Nuestros Guardianes Alebrijes.</h2>
+          <p>
+            En las culturas ancestrales de México, los alebrijes son quimeras protectoras que combinan virtudes de diferentes criaturas. En EchoCreativa, cada guardián custodia un pilar de tu transformación digital.
+          </p>
+        </div>
+
+        <div class="alebrijes-cards-slider">
+          <!-- Guardián 1 -->
+          <article class="alebrije-unit-card reveal">
+            <div class="mascot-thumbnail-box">
+              <img src="assets/img/mascotas/quetzal_de_codigo.jpg" alt="Quetzal de Código" class="mascot-thumbnail-img">
+            </div>
+            <h3 class="mascot-name">Quetzal de Código</h3>
+            <span class="mascot-role-tag">Guardián de la Arquitectura</span>
+            <p class="mascot-power-desc">
+              Supervisa la estabilidad, limpieza y escalabilidad de tus desarrollos web y conexiones de bases de datos.
+            </p>
+          </article>
+
+          <!-- Guardián 2 -->
+          <article class="alebrije-unit-card reveal" style="transition-delay: 0.1s;">
+            <div class="mascot-thumbnail-box">
+              <img src="assets/img/mascotas/jaguar_de_datos.jpg" alt="Jaguar de Datos" class="mascot-thumbnail-img">
+            </div>
+            <h3 class="mascot-name">Jaguar de Datos</h3>
+            <span class="mascot-role-tag">Guardián de Business Intelligence</span>
+            <p class="mascot-power-desc">
+              Rastrea patrones invisibles en tus ventas, inventarios y ERP para convertirlos en tableros de mando decisivos.
+            </p>
+          </article>
+
+          <!-- Guardián 3 -->
+          <article class="alebrije-unit-card reveal" style="transition-delay: 0.2s;">
+            <div class="mascot-thumbnail-box">
+              <img src="assets/img/mascotas/colibri_de_conversion.jpg" alt="Colibrí de Conversión" class="mascot-thumbnail-img">
+            </div>
+            <h3 class="mascot-name">Colibrí de Conversión</h3>
+            <span class="mascot-role-tag">Guardián de Marketing & Ventas</span>
+            <p class="mascot-power-desc">
+              Ágil, veloz y certero. Lleva el mensaje de tu empresa a las personas indicadas para generar oportunidades de negocio.
+            </p>
+          </article>
+
+          <!-- Guardián 4 -->
+          <article class="alebrije-unit-card reveal" style="transition-delay: 0.3s;">
+            <div class="mascot-thumbnail-box">
+              <img src="assets/img/mascotas/ajolote_de_flujos.jpg" alt="Ajolote de Flujos" class="mascot-thumbnail-img">
+            </div>
+            <h3 class="mascot-name">Ajolote de Flujos</h3>
+            <span class="mascot-role-tag">Guardián de WhatsApp IA</span>
+            <p class="mascot-power-desc">
+              Se regenera y adapta a tus procesos repetitivos, atendiendo a tus clientes 24/7 sin descanso ni errores.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: GRAND CTA & FORMULARIO DE CONTACTO OPERATIVO
+         ========================================================================== -->
+    <section class="contact-section" id="contacto">
+      <div class="container">
+        <div class="contact-grand-banner reveal">
+          <div class="contact-layout-grid">
+            <!-- Left Info -->
+            <div class="contact-info-col">
+              <div class="badge-pill" style="margin-bottom: 1.25rem;">
+                <span class="pulse-indicator"></span>
+                <span class="mono-tag">Hablemos de tu Empresa</span>
+              </div>
+              <h2>Creemos el guardián digital de tu negocio.</h2>
+              <p>
+                Sin rodeos ni cotizaciones a ciegas. Cuéntanos qué proceso operativo quieres resolver o qué meta de ventas deseas alcanzar y te preparamos una ruta clara construida sobre tus herramientas actuales.
+              </p>
+
+              <div class="contact-details-list">
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                  </div>
+                  <div>
+                    <strong style="display: block;">WhatsApp Directo:</strong>
+                    <a href="https://wa.me/525670049062" target="_blank" style="color: var(--ec-teal);">+52 56 7004 9062</a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <strong style="display: block;">Correo Electrónico:</strong>
+                    <a href="mailto:echocreativa@gmail.com" style="color: var(--ec-teal);">echocreativa@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <strong style="display: block;">Ubicación:</strong>
+                    <span>Ciudad de México, México · Cobertura Nacional</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Form -->
+            <div class="contact-form-box">
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="cf_name" class="form-label">Tu Nombre Completo *</label>
+                  <input type="text" id="cf_name" class="form-control" placeholder="Ej. Josué Rivera" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="cf_company" class="form-label">Nombre de tu Empresa o Negocio</label>
+                  <input type="text" id="cf_company" class="form-control" placeholder="Ej. Distribuidora del Centro">
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="form-group">
+                    <label for="cf_whatsapp" class="form-label">WhatsApp *</label>
+                    <input type="tel" id="cf_whatsapp" class="form-control" placeholder="Ej. 55 1234 5678" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="cf_email" class="form-label">Correo Electrónico (Opcional)</label>
+                    <input type="email" id="cf_email" class="form-control" placeholder="ejemplo@empresa.com">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="cf_service" class="form-label">¿Qué solución buscas principalmente?</label>
+                  <select id="cf_service" class="form-control" style="background-color: var(--bg-surface);">
+                    <option value="Conectar Aspel o SQL con Móvil">Conectar Aspel (SAE/COI/NOI) o SQL con Móvil</option>
+                    <option value="Página Web o Tienda en Línea">Página Web o Tienda en Línea con Mercado Pago</option>
+                    <option value="Chatbot Inteligente para WhatsApp">Chatbot Inteligente para WhatsApp con IA</option>
+                    <option value="Gestión de Redes Sociales y Anuncios">Gestión de Redes Sociales y Campañas de Anuncios</option>
+                    <option value="Dashboards y Business Intelligence">Dashboards y Business Intelligence sobre mis datos</option>
+                    <option value="Paquete Integral Echo Impulso Digital">Paquete Integral "ECHO Impulso Digital"</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="cf_message" class="form-label">Cuéntanos brevemente tu reto</label>
+                  <textarea id="cf_message" class="form-control" placeholder="Ej. Queremos que los vendedores capturen pedidos en almacén desde el celular y se sincronicen con Aspel SAE sin recapturas manuales..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-magenta" style="width: 100%; justify-content: center; font-size: 1rem; padding: 0.85rem;">
+                  <span>Enviar y Abrir WhatsApp</span>
+                  <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+
+                <p class="form-microcopy">
+                  <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <span>Al enviar, se abrirá una conversación de WhatsApp con tu mensaje precargado para atenderte de inmediato.</span>
+                </p>
+
+                <div id="formFeedbackAlert" class="form-feedback-alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       ALEBRIJE GUARDIAN COMPANION (NON-INVASIVE FLOATING ASSISTANT)
+       ========================================================================== -->
+  <div class="companion-widget-container" id="companionWidget">
+    <div class="companion-bubble" id="companionBubble" onclick="nextCompanionTip()" style="display: none;" role="dialog" aria-label="Consejo del Guardián Echo">
+      <div class="companion-bubble-header">
+        <span class="companion-bubble-title" id="companionTitle">✦ Guardián Echo</span>
+        <button type="button" class="companion-close-btn" onclick="closeCompanionBubble(event)" aria-label="Cerrar diálogo del Guardián" title="Cerrar diálogo">✕</button>
+      </div>
+      <p class="companion-bubble-text" id="companionText">
+        ¡Hola! Soy tu alebrije guía. En EchoCreativa conectamos tus sistemas, tus datos y tu operación con rigor técnico y espíritu mexicano.
+      </p>
+    </div>
+
+    <button type="button" class="companion-avatar-trigger" onclick="triggerCompanionAction()" aria-label="Abrir guía con el Guardián Digital Echo" title="Habla con tu Guardián Echo">
+      <img src="assets/img/logo.png" alt="Guardián Echo Avatar" class="companion-avatar-icon">
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#inicio" class="brand-logo-wrap">
+            <img src="assets/img/logo.png" alt="EchoCreativa" style="height: 40px;">
+            <span class="mono-tag" style="color: var(--ec-teal); font-weight: 700; font-size: 1.1rem;">
+              echo<span style="color: var(--ec-magenta);">creativa</span>
+            </span>
+          </a>
+          <p>
+            Soluciones empresariales con inteligencia artificial, desarrollo sobre ERPs y marketing de resultados. Transformamos cuellos de botella en ventajas competitivas.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proposito">Filosofía</a></li>
+            <li><a href="#soluciones">La Tríada Híbrida</a></li>
+            <li><a href="#diagnostico">Diagnostica tu Reto</a></li>
+            <li><a href="#proceso">Cómo Trabajamos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Soluciones</h4>
+          <ul class="footer-links-list">
+            <li><a href="#soluciones">Conectividad Aspel & SQL</a></li>
+            <li><a href="#precios">Páginas Web & E-Commerce</a></li>
+            <li><a href="#precios">Chatbots WhatsApp con IA</a></li>
+            <li><a href="#precios">Redes Sociales & Pauta</a></li>
+            <li><a href="#casos">Inventarios Móviles</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contacto Directo</h4>
+          <ul class="footer-links-list">
+            <li><a href="https://wa.me/525670049062" target="_blank">WhatsApp: +52 56 7004 9062</a></li>
+            <li><a href="mailto:echocreativa@gmail.com">echocreativa@gmail.com</a></li>
+            <li><span>Ciudad de México, México</span></li>
+            <li><a href="https://echocreativa.com.mx/" target="_blank">echocreativa.com.mx</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 EchoCreativa. Todos los derechos reservados. Desarrollado con tecnología con propósito y orgullo mexicano.
+        </div>
+        <div class="footer-social-links">
+          <a href="https://www.facebook.com/echocreativa" target="_blank" class="social-circle-link" title="Facebook EchoCreativa" aria-label="Facebook">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://wa.me/525670049062" target="_blank" class="social-circle-link" title="WhatsApp EchoCreativa" aria-label="WhatsApp">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
