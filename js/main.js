@@ -130,7 +130,7 @@ function initContactForm() {
     const formattedMsg = `Hola EchoCreativa, mi nombre es ${name}${company ? ' de ' + company : ''}.\n• Tel/WhatsApp: ${whatsapp}\n• Correo: ${email || 'No proporcionado'}\n• Interés principal: ${service}\n• Detalle de mi reto: ${message || 'Deseo conocer sus soluciones.'}\n\n¿Podemos platicarlo?`;
 
     const encoded = encodeURIComponent(formattedMsg);
-    const waUrl = `https://wa.me/525670049062?text=${encoded}`;
+    const waUrl = `https://wa.me/525670069062?text=${encoded}`;
 
     setTimeout(() => {
       window.open(waUrl, '_blank');

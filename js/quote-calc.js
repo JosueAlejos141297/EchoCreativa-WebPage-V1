@@ -278,7 +278,7 @@ function filterPricingCategory(catKey) {
           `).join('')}
         </ul>
       </div>
-      <a href="https://wa.me/525670049062?text=${encodeURIComponent(item.whatsappMsg)}" target="_blank" class="${item.featured ? 'btn-magenta' : 'btn-primary'}" style="justify-content: center; width: 100%;">
+      <a href="https://wa.me/525670069062?text=${encodeURIComponent(item.whatsappMsg)}" target="_blank" class="${item.featured ? 'btn-magenta' : 'btn-primary'}" style="justify-content: center; width: 100%;">
         Contratar este plan →
       </a>
     </article>
@@ -369,7 +369,7 @@ function updateCalcTotal() {
 
   if (sendBtn) {
     const msg = `Hola EchoCreativa, utilicé el cotizador interactivo en su web. Seleccioné los siguientes servicios:\n• ${chosenNames.join('\n• ')}\n\nInversión inicial estimada: $${totalOnce.toLocaleString('es-MX')} MXN\nMensualidad: $${totalMonthly.toLocaleString('es-MX')} MXN\n¿Podemos revisarlo juntos?`;
-    sendBtn.href = `https://wa.me/525670049062?text=${encodeURIComponent(msg)}`;
+    sendBtn.href = `https://wa.me/525670069062?text=${encodeURIComponent(msg)}`;
   }
 }
 

@@ -121,7 +121,7 @@ function renderDiagnostic(index) {
 
   if (ctaBtn) {
     const encoded = encodeURIComponent(data.whatsappMessage);
-    ctaBtn.href = `https://wa.me/525670049062?text=${encoded}`;
+    ctaBtn.href = `https://wa.me/525670069062?text=${encoded}`;
   }
 }
 
